@@ -17,6 +17,10 @@ class CircleShape(pygame.sprite.Sprite):
         # inheriting classes must override
         pass
 
+    def collides_with(self, other_object: "CircleShape") -> bool:
+        distance_between_objects = pygame.math.Vector2.distance_to(self.position, other_object.position)
+        return distance_between_objects <=(self.radius + other_object.radius)
+
     def update(self, delta_time: float) -> None:
         # inheriting classes must override
         pass

@@ -7,6 +7,7 @@ LINE_WIDTH: int = 2
 PLAYER_RADIUS: int = 20
 PLAYER_TURN_SPEED: int = 300
 PLAYER_SPEED: int = 200
+PLAYER_SHOOT_SPEED: int = 500
 
 # asteroids
 ASTEROID_MIN_RADIUS: int = 20
@@ -14,7 +15,11 @@ ASTEROID_KINDS: int = 3
 ASTEROID_SPAWN_RATE_SECONDS: float = 0.8
 ASTEROID_MAX_RADIUS: int = ASTEROID_MIN_RADIUS * ASTEROID_KINDS
 
+# bullets
+SHOT_RADIUS: int = 5
+
 # colors
 SCREEN_FILL_COLOR: str = "black"
 PLAYER_COLOR: str = "white"
 ASTEROID_COLOR: str = "white"
+BULLET_COLOR: str = "white"
