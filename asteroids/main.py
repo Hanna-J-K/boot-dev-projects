@@ -10,20 +10,20 @@ def main():
     print(f"Starting Asteroids with pygame version: {pygame.version.ver}")
     pygame.init()
 
-    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    screen: pygame.Surface = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
     print(f"Screen width: {SCREEN_WIDTH}")
     print(f"Screen height: {SCREEN_HEIGHT}")
     
-    game_clock = pygame.time.Clock()
+    game_clock: pygame.time.Clock = pygame.time.Clock()
     delta_time: float = 0.0
     
     center_position_x: float = SCREEN_WIDTH / 2
     center_position_y: float = SCREEN_HEIGHT / 2
 
     # pygame groups for classes
-    updatable = pygame.sprite.Group()
-    drawable = pygame.sprite.Group()
-    asteroids = pygame.sprite.Group()
+    updatable: pygame.sprite.Group = pygame.sprite.Group()
+    drawable: pygame.sprite.Group = pygame.sprite.Group()
+    asteroids: pygame.sprite.Group = pygame.sprite.Group()
 
     Player.containers = (updatable, drawable)
     Asteroid.containers = (asteroids, updatable, drawable)
