@@ -34,6 +34,7 @@ def main():
         pygame.display.flip()
         delta_time = game_clock.tick(60) / 1000
         
+        player.update(delta_time)
         
 if __name__ == "__main__":
     main()
