@@ -1,4 +1,5 @@
 game_state.jsonl
 
 asteroids/__pycache__
-asteroids/uv.lock
+
+uv.lock
